@@ -228,12 +228,7 @@ public class MainActivity extends AppCompatActivity {
         menuPerfil.setOnClickListener(v -> {
 
             drawerLayout.closeDrawer(Gravity.LEFT);
-
-            Toast.makeText(
-                    this,
-                    "Perfil próximamente",
-                    Toast.LENGTH_SHORT
-            ).show();
+            abrirPerfil();
 
         });
 
@@ -307,10 +302,7 @@ public class MainActivity extends AppCompatActivity {
 
         navPerfil.setOnClickListener(v -> {
             animarNav(v);
-
-            Toast.makeText(this,
-                    "Perfil próximamente",
-                    Toast.LENGTH_SHORT).show();
+            abrirPerfil();
         });
 
         // ==========================================
@@ -371,6 +363,17 @@ public class MainActivity extends AppCompatActivity {
 
         startActivity(intent);
 
+    }
+
+    // ==========================================
+    // PERFIL
+    // ==========================================
+    private void abrirPerfil() {
+        Intent intent = new Intent(
+                MainActivity.this, PerfilActivity.class
+        );
+
+        startActivity(intent);
     }
 
 

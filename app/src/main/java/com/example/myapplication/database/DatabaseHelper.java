@@ -709,8 +709,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 argumentos.toArray(new String[0])
         );
     }
-
-
     // ==========================================
 // CONVERTIR FECHA
 // dd/MM/yyyy -> yyyyMMdd
